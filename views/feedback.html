@@ -1,0 +1,16 @@
+<div ng-controller="feedbackCtrl" class="container">
+  <form name="form">
+    <div>
+      <input type="text" name="authorField" ng-model="author" placeholder="author..." required ng-minlength="3" class="form-control" ng-keyup="($event.keyCode == 13 && author.length > 2) ? addMessage() : return" style="margin-bottom: 10px"/>
+      <input type="text" name="messageField" ng-model="message" placeholder="message..." required ng-minlength="3" class="form-control" ng-keyup="($event.keyCode == 13 && message.length > 2) ? addMessage() : return" style="margin-bottom: 10px"/>
+      <button ng-click="addMessage()" ng-hide="form.authorField.$invalid||form.messageField.$invalid" class="btn btn-primary" type="button">Send
+      </button>
+    </div>
+  </form>
+  <hr/>
+  <div ng-repeat="msg in msgs" class="row list-item">
+    <div class="col-md-6">
+      <span>{{msg.id|date}}:{{msg.author}}:{{msg.message}}</span>
+    </div>
+  </div>
+</div>
