@@ -6,7 +6,8 @@ angular.module('app.directives', [])
     }
   }])
   .directive('footbar', [function() {
-        return {
-          restrict: 'E',
-          templateUrl: 'views/directive/footerbar.html'
-        };
+    return {
+      restrict: 'E',
+      templateUrl: 'views/directive/footerbar.html'
+    }
+  }]);
