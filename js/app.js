@@ -1,8 +1,5 @@
-angular.module('app', ['ngRoute',
-    'app.directives',
-    'app.map',
-    'app.feedback'
-  ])
+angular.module('app', ['ngRoute','firebase']);
+angular.module('app')
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {

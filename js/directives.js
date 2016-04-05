@@ -1,4 +1,4 @@
-angular.module('app.directives', [])
+angular.module('app')
   .directive('navigationbar', [function() {
     return {
       restrict: 'E',

@@ -1,4 +1,4 @@
-angular.module('app.feedback', ['firebase'])
+angular.module('app')
   .controller('feedbackCtrl', ['$scope', '$firebaseArray',
     function($scope, $firebaseArray) {
       var ref = new Firebase('https://mvstudio.firebaseio.com/');

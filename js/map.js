@@ -1,4 +1,4 @@
-angular.module('app.map', [])
+angular.module('app')
   .controller('MapCtrl', function() {
     var mapProp = {
       center: new google.maps.LatLng(49.854862, 24.025606),
